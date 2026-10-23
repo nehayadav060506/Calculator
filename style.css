@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 15px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #edf0ff, #dce7ff);
+  color: #20243a;
+}
+
+.calculator {
+  width: 100%;
+  max-width: 370px;
+  padding: 25px;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 18px 50px #26345c20;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.heading h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.heading p {
+  color: #85899b;
+  font-size: 13px;
+}
+
+.display {
+  padding: 20px 15px;
+  margin-bottom: 20px;
+  text-align: right;
+  background: #f4f5fb;
+  border-radius: 15px;
+  min-width: 0;
+}
+
+.history {
+  min-height: 20px;
+  margin-bottom: 10px;
+  color: #85899b;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+#screen {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #20243a;
+  font-size: clamp(28px, 8vw, 38px);
+  font-weight: bold;
+  text-align: right;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 11px;
+}
+
+.buttons button {
+  min-width: 0;
+  height: 57px;
+  border: none;
+  border-radius: 13px;
+  background: #f2f3f9;
+  color: #292d43;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s, background 0.15s;
+}
+
+.buttons button:hover {
+  background: #e2e5f5;
+  transform: translateY(-2px);
+}
+
+.buttons button:active {
+  transform: scale(0.95);
+}
+
+.buttons .utility {
+  background: #e9e6ff;
+  color: #6550c9;
+  font-size: 16px;
+}
+
+.buttons .operator {
+  background: #e9edff;
+  color: #4d62d6;
+}
+
+.buttons .equals {
+  background: #6556dc;
+  color: white;
+}
+
+.buttons .equals:hover {
+  background: #5040c2;
+}
+
+.keyboard-note {
+  display: block;
+  margin: 20px auto 0;
+  padding: 8px;
+  border: none;
+  background: transparent;
+  color: #85899b;
+  font-size: 12px;
+}
+
+footer {
+  margin-top: 22px;
+  color: #656b82;
+  font-size: 13px;
+  text-align: center;
+}
+
+@media (max-width: 400px) {
+  .calculator {
+    padding: 18px;
+  }
+
+  .buttons {
+    gap: 8px;
+  }
+
+  .buttons button {
+    height: 53px;
+  }
+}

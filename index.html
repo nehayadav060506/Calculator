@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator | CodeAlpha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="calculator">
+    <div class="heading">
+      <h1>Calculator</h1>
+      <p>Simple calculations, made easy.</p>
+    </div>
+
+    <section class="display">
+      <div id="history" class="history">Ready to calculate</div>
+      <input
+        type="text"
+        id="screen"
+        value="0"
+        aria-label="Calculator display"
+        readonly
+      >
+    </section>
+
+    <section class="buttons">
+      <button class="utility" data-action="clear">AC</button>
+      <button class="utility" data-action="delete">DEL</button>
+      <button class="utility" data-action="percent">%</button>
+      <button class="operator" data-operator="/">÷</button>
+
+      <button data-number="7">7</button>
+      <button data-number="8">8</button>
+      <button data-number="9">9</button>
+      <button class="operator" data-operator="*">×</button>
+
+      <button data-number="4">4</button>
+      <button data-number="5">5</button>
+      <button data-number="6">6</button>
+      <button class="operator" data-operator="-">−</button>
+
+      <button data-number="1">1</button>
+      <button data-number="2">2</button>
+      <button data-number="3">3</button>
+      <button class="operator" data-operator="+">+</button>
+
+      <button data-action="sign">+/-</button>
+      <button data-number="0">0</button>
+      <button data-action="decimal">.</button>
+      <button class="equals" data-action="equals">=</button>
+    </section>
+
+    <button class="keyboard-note" id="keyboardHelp">
+      You can also use your keyboard
+    </button>
+  </main>
+
+  <footer>CodeAlpha Frontend Internship</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
